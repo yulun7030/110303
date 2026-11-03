@@ -1,4 +1,11 @@
 <!doctype html>
+<!-- 錯誤示範（絕對路徑） -->
+<a-asset-item id="model" src="/assets/asset.glb"></a-asset-item>
+
+<!-- 正確修正（改為相對路徑） -->
+<a-asset-item id="model" src="./assets/asset.glb"></a-asset-item>
+<!-- 或者如果 assets 資料夾在上一層 -->
+<a-asset-item id="model" src="assets/asset.glb"></a-asset-item>
 <html>
     <head>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
